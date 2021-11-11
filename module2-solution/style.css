@@ -1,0 +1,86 @@
+main{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+header{
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-size: 32px;
+    font-weight: bold;
+}
+h3 {
+    top: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    border-bottom: black 2px solid;
+    border-left: black 2px solid;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+p{
+    text-align: center;
+}
+.chicken{
+    color: black;
+    background-color: rgb(255, 153, 153);
+}
+.beef{
+    color: white;
+    background-color: rgb(185, 0, 0);
+}
+.sushi{
+    color: black;
+    background-color: rgb(240, 210, 146);
+}
+.disp{
+    position: relative;
+    background-color: gray;
+    border: black 3px solid;
+    padding: 20px 10px;
+    width: 33.33%;
+    margin-right: 20px;
+}
+.container3{
+    margin-right: 0px;
+}
+@media(max-width: 1200px){
+    main{
+        display: block;
+    }
+    .disp{
+        float: left;
+        margin: 0;
+    }
+    .container1{
+        float: left;
+        margin-right: 20px;
+
+    }
+    .container1,
+    .container2{
+        width: calc(50% - 36px);
+    }
+    .container3{
+        width: calc(100% - 26px);
+        margin-top: 20px;
+    }
+}
+@media(max-width: 768px){
+    main{
+        display: block;
+    }
+    .disp{
+        width: calc(100% - 26px);
+    }
+    .container2{
+        margin-top: 20px;
+    }
+}
